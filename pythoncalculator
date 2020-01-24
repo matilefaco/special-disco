@@ -1,0 +1,47 @@
+# Calculadora em Python
+
+def soma(a, b):
+    return (a + b)
+    
+def subtracao(a, b):
+    return (a - b)
+    
+def multiplicacao(a, b):
+    return (a * b)
+    
+def divisao(a, b):
+    return (a / b)
+
+escolha = int(input("""*********** Python Calculator ***********
+
+Selecione o número da operação desejada:
+
+1 - Soma
+2 - Subtração
+3 - Multiplicação
+4 - Divisão
+
+Digite sua opção (1/2/3/4):""" ))
+
+if escolha == 1:
+    primeironumero = int(input("Digite o primeiro número: "))
+    segundonumero = int(input("Digite o segundo número: "))
+    print(primeironumero, "+", segundonumero, "=", soma(primeironumero, segundonumero))
+                        
+if escolha == 2:
+    primeironumero = int(input("Digite o primeiro número: "))
+    segundonumero = int(input("Digite o segundo número: "))
+    print(primeironumero, "-", segundonumero, "=", subtracao(primeironumero, segundonumero))
+    
+if escolha == 3:
+    primeironumero = int(input("Digite o primeiro número: "))
+    segundonumero = int(input("Digite o segundo número: "))
+    print(primeironumero, "*", segundonumero, "=", multiplicacao(primeironumero, segundonumero))
+    
+if escolha == 4:
+    primeironumero = int(input("Digite o primeiro número: "))
+    segundonumero = int(input("Digite o segundo número: "))
+    print(primeironumero, "/", segundonumero, "=", divisao(primeironumero, segundonumero))
+    
+if escolha != 1 and escolha != 2 and escolha != 3 and escolha != 4:
+    print("Opção Inválida!")
